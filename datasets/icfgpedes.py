@@ -25,7 +25,7 @@ class ICFGPEDES(BaseDataset):
         super(ICFGPEDES, self).__init__()
         self.dataset_dir = op.join(root, self.dataset_dir)
         self.img_dir = op.join(self.dataset_dir, 'imgs/')
-        self.anno_path = op.join(self.dataset_dir, 'ICFG-PEDES_mcq_noun_neg.json')
+        self.anno_path = op.join(self.dataset_dir, 'ICFG-PEDES_noun.json')
         self._check_before_run()
 
         self.train_annos, self.test_annos, self.val_annos = self._split_anno(self.anno_path)
